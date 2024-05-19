@@ -47,9 +47,11 @@ li{
 
     }
 }
+.btn a {
+    color: var(--blue);
+}
 .btn{
     font-weight: 700;
-    color: var(--blue);
     font-family: inherit;
     background-color: var(--text);
     border-color: var(--pink);
@@ -101,6 +103,19 @@ li{
     z-index: 2;
 }
 
+.fa-bars.close{
+    display: none;
+}
+
+.fa-times.open{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 4rem;
+    z-index: 2;
+}
+
 .nav-links li{
     margin-left: 2 rem;
 }
@@ -109,9 +124,10 @@ li{
     opacity: 0.5;
 }
 
-.nav-links .btn{
-    margin-left: 2rem;
-}
+/* .nav-links .btn{
+    
+    margin-left: 1rem;
+} */
 
 .fa-bars,
 .fa-times{
@@ -153,7 +169,6 @@ p{
         justify-content: flex-end;
         width: 100%;
         margin-right: 4rem;
-        /* padding-right: 3rem; */
     }
     h2{
         font-size: 2.5rem;
